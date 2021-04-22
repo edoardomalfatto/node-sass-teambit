@@ -1,0 +1,19 @@
+header {
+    height: 6vh;
+    .standard_wrapper {
+        @include flex-ai-center;
+        justify-content: space-between;
+        border-bottom: 1px solid $font_color;
+        ul.list_none {
+            @include flex-ai-center;
+            justify-content: space-between;
+            li {
+                padding: 0 10px;
+                a {
+                    color: $font_color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

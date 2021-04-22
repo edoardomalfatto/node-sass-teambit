@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font_family;
+    font: $font_color;
+}
+
+
+/* Structural divs */
+
+.standard_wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* Utility */
+
+.list_none {
+    list-style: none;
+}
+
+
+/* Buttons */
+
+#nav_button {
+    padding: 5px;
+    border: 1px solid $link_color;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 20px;
+        padding-right: 3px;
+    }
+}
+
+.sing_up_button {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: $link_color;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    img {
+        width: 20px;
+        padding-right: 3px;
+    }
+}

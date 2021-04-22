@@ -1,0 +1,33 @@
+/* sezione Jumbotron */
+
+#jumbotron {
+    display: flex;
+    .standard_wrapper {
+        display: flex;
+        padding-top: $strong_padding;
+    }
+}
+
+.left_jumbotron {
+    width: 40%;
+    .jumbotron_description {
+        padding: $strong_padding 0;
+        h1 {
+            padding-bottom: $light_padding;
+        }
+    }
+    .jumbotron_buttons {
+        @include flex-ai-center;
+        padding-bottom: $light_padding;
+        span {
+            padding: 10px;
+        }
+    }
+}
+
+.right_jumbotron {
+    width: 60%;
+    img {
+        width: 100%;
+    }
+}
