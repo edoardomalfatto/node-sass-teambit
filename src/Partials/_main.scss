@@ -4,7 +4,7 @@
     display: flex;
     .standard_wrapper {
         display: flex;
-        padding-top: $strong_padding;
+        padding: $strong_padding 0;
     }
 }
 
@@ -29,5 +29,35 @@
     width: 60%;
     img {
         width: 100%;
+    }
+}
+
+
+/* sezione Presentation*/
+
+#presentation {
+    background-color: $brand_primary;
+    .before,
+    .after {
+        padding: $strong_padding 0;
+        h3 {
+            padding: 50px 0;
+        }
+    }
+    .before {
+        border-bottom: 1px solid black;
+    }
+    .first_row {
+        @include flex-jc-spacebtw;
+        div[class^='little_img'] {
+            width: 25%;
+            padding: 50px;
+        }
+        img {
+            height: 40%;
+        }
+    }
+    .second_row img {
+        width: 300px;
     }
 }

@@ -21,10 +21,17 @@ body {
   list-style: none;
 }
 
+.text_center {
+  text-align: center;
+}
+
 /* Buttons */
 #nav_button {
   padding: 5px;
+  color: #2c4792;
   border: 1px solid #2c4792;
+  cursor: pointer;
+  font-weight: bolder;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -45,6 +52,7 @@ body {
   border-radius: 5px;
   padding: 5px;
   text-decoration: none;
+  font-weight: bolder;
 }
 .sing_up_button img {
   width: 20px;
@@ -79,7 +87,7 @@ header .standard_wrapper ul.list_none li a {
 }
 #jumbotron .standard_wrapper {
   display: flex;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 .left_jumbotron {
@@ -105,4 +113,34 @@ header .standard_wrapper ul.list_none li a {
 }
 .right_jumbotron img {
   width: 100%;
+}
+
+/* sezione Presentation*/
+#presentation {
+  background-color: #ffe7d2;
+}
+#presentation .before,
+#presentation .after {
+  padding: 40px 0;
+}
+#presentation .before h3,
+#presentation .after h3 {
+  padding: 50px 0;
+}
+#presentation .before {
+  border-bottom: 1px solid black;
+}
+#presentation .first_row {
+  display: flex;
+  justify-content: space-between;
+}
+#presentation .first_row div[class^=little_img] {
+  width: 25%;
+  padding: 50px;
+}
+#presentation .first_row img {
+  height: 40%;
+}
+#presentation .second_row img {
+  width: 300px;
 }

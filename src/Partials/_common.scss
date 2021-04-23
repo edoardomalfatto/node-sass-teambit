@@ -25,12 +25,19 @@ body {
     list-style: none;
 }
 
+.text_center {
+    text-align: center;
+}
+
 
 /* Buttons */
 
 #nav_button {
     padding: 5px;
+    color: $link_color;
     border: 1px solid $link_color;
+    cursor: pointer;
+    font-weight: bolder;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -51,6 +58,7 @@ body {
     border-radius: 5px;
     padding: 5px;
     text-decoration: none;
+    font-weight: bolder;
     img {
         width: 20px;
         padding-right: 3px;
