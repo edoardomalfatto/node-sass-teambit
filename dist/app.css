@@ -25,6 +25,10 @@ body {
   text-align: center;
 }
 
+.bolder_font {
+  font-weight: bolder;
+}
+
 /* Buttons */
 #nav_button {
   padding: 5px;
@@ -126,6 +130,7 @@ header .standard_wrapper ul.list_none li a {
 #presentation .before h3,
 #presentation .after h3 {
   padding: 50px 0;
+  font-weight: bolder;
 }
 #presentation .before {
   border-bottom: 1px solid black;
@@ -143,4 +148,141 @@ header .standard_wrapper ul.list_none li a {
 }
 #presentation .second_row img {
   width: 300px;
+}
+
+/* sezione How It Works*/
+#how_it_works div[class^=hiw_section_] {
+  padding-top: 50px;
+}
+#how_it_works div[class^=hiw_section_] .hiw_img {
+  width: 50%;
+}
+#how_it_works div[class^=hiw_section_] .hiw_img img {
+  width: 100%;
+}
+#how_it_works div[class^=hiw_section_] .hiw_description {
+  padding-top: 10px;
+}
+#how_it_works div[class^=hiw_section_] .hiw_description h3 {
+  padding-bottom: 40px;
+}
+#how_it_works div[class^=hiw_section_] .hiw_description p {
+  padding-bottom: 20px;
+}
+#how_it_works div[class^=hiw_section_] .hiw_description a {
+  color: #2c4792;
+  text-decoration: none;
+  font-weight: bolder;
+}
+#how_it_works div[class^=hiw_section_] .hiw_description .hiw_descripiton_img {
+  padding-top: 200px;
+}
+#how_it_works div[class^=hiw_section_] .hiw_description .hiw_descripiton_img img {
+  width: 80%;
+}
+
+.hiw_description {
+  width: 30%;
+}
+
+#how_it_works div[class^=hiw_section_].flex_start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#how_it_works div[class^=hiw_section_].flex_end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* sezione Get Started*/
+#get_started {
+  background-color: #ffe7d2;
+  padding: 40px 0;
+}
+#get_started .get_started_title {
+  padding-bottom: 40px;
+}
+#get_started .get_started_title h1 {
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+#get_started .get_started_title h1 img.prova {
+  height: 1em;
+}
+#get_started .chat {
+  position: relative;
+  width: 30%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #2c4792;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+#get_started .chat .chat_text p {
+  padding-bottom: 20px;
+}
+#get_started .chat .founders {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+#get_started .chat .founders .founder_img img {
+  width: 80px;
+  padding-right: 20px;
+}
+#get_started .chat .founders .founder_who p {
+  color: #2c4792;
+  font-weight: bold;
+}
+#get_started #virgolette {
+  position: absolute;
+  top: -15px;
+  left: -1px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #2c4792;
+}
+#get_started .jumbotron_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+#get_started .jumbotron_buttons span {
+  padding: 0 3px;
+}
+
+/* Footer */
+footer .standard_wrapper {
+  display: flex;
+  padding: 40px 0;
+}
+footer .standard_wrapper .teambit_info {
+  width: 30%;
+  display: flex;
+}
+footer .standard_wrapper .teambit_info .teambit_description {
+  font-weight: bolder;
+}
+footer .standard_wrapper .teambit_info .teambit_description p {
+  padding-left: 5px;
+}
+footer .standard_wrapper .teambit_info .teambit_description p span {
+  color: #2c4792;
+}
+footer .standard_wrapper .footer_section {
+  width: calc(70%/3);
+}
+footer .standard_wrapper .footer_section h3 {
+  padding-bottom: 20px;
+}
+footer .standard_wrapper .footer_section ul li {
+  padding-bottom: 10px;
+}
+footer .standard_wrapper .footer_section ul li a {
+  text-decoration: none;
+  color: #58402c;
+  font-weight: bold;
 }

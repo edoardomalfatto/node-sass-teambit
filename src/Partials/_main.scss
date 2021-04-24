@@ -42,6 +42,7 @@
         padding: $strong_padding 0;
         h3 {
             padding: 50px 0;
+            font-weight: bolder;
         }
     }
     .before {
@@ -59,5 +60,150 @@
     }
     .second_row img {
         width: 300px;
+    }
+}
+
+
+/* sezione How It Works*/
+
+#how_it_works div[class^='hiw_section_'] {
+    padding-top: 50px;
+    .hiw_img {
+        width: 50%;
+        img {
+            width: 100%;
+            ;
+        }
+    }
+    .hiw_description {
+        padding-top: 10px;
+        h3 {
+            padding-bottom: $strong_padding;
+        }
+        p {
+            padding-bottom: $light_padding;
+        }
+        a {
+            color: $link_color;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .hiw_descripiton_img {
+            padding-top: 200px;
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.hiw_description {
+    width: 30%;
+}
+
+#how_it_works div[class^='hiw_section_'].flex_start {
+    @include flex-jc-flxstart;
+}
+
+#how_it_works div[class^='hiw_section_'].flex_end {
+    @include flex-jc-flxend;
+}
+
+
+/* sezione Get Started*/
+
+#get_started {
+    background-color: $brand_primary;
+    padding: $strong_padding 0;
+    .get_started_title {
+        padding-bottom: $strong_padding;
+        h1 {
+            padding-bottom: $light_padding;
+            font-weight: bolder;
+            img.prova {
+                height: 1em;
+            }
+        }
+    }
+    .chat {
+        position: relative;
+        width: 30%;
+        padding: $light_padding;
+        background-color: white;
+        border: 1px solid $link_color;
+        border-radius: 5px;
+        margin: 0 auto;
+        .chat_text p {
+            padding-bottom: $light_padding;
+        }
+        .founders {
+            @include flex-ai-center;
+            padding-top: $light_padding;
+            .founder_img img {
+                width: 80px;
+                padding-right: $light_padding;
+            }
+            .founder_who {
+                p {
+                    color: $link_color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    #virgolette {
+        position: absolute;
+        top: -15px;
+        left: -1px;
+        width: 30px;
+        border-radius: 5px;
+        background-color: $link_color;
+        ;
+    }
+    .jumbotron_buttons {
+        @include flex-jc-center;
+        align-items: center;
+        padding-top: $strong_padding;
+        padding-bottom: $light_padding;
+        span {
+            padding: 0 3px;
+        }
+    }
+}
+
+
+/* Footer */
+
+footer {
+    .standard_wrapper {
+        display: flex;
+        padding: $strong_padding 0;
+        .teambit_info {
+            width: 30%;
+            display: flex;
+            .teambit_description {
+                font-weight: bolder;
+                p {
+                    padding-left: 5px;
+                    span {
+                        color: $link_color;
+                    }
+                }
+            }
+        }
+        .footer_section {
+            width: calc(70%/3);
+            h3 {
+                padding-bottom: $light_padding;
+            }
+            ul li {
+                padding-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: $font_color;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }

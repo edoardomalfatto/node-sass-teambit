@@ -7,3 +7,18 @@
     display: flex;
     justify-content: space-between;
 }
+
+@mixin flex-jc-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-jc-flxend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin flex-jc-flxstart {
+    display: flex;
+    justify-content: flex-start;
+}
